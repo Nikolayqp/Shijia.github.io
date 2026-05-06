@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shijia / 十家 — Китайское кафе в Санкт-Петербурге</title>
+    <meta name="description" content="Shijia (十家) — настоящее китайское кафе в центре Санкт-Петербурга: большие порции, доступные цены и уютная атмосфера." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Shijia / 十家 — Китайское кафе в Санкт-Петербурге" />
+    <meta property="og:description" content="Настоящая китайская кухня в сердце Петербурга. Откройте меню и постройте маршрут до кафе Shijia." />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="Shijia / 十家" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .hero__photo { width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px; margin-top: 2rem; display: none; }
+      #footer-vk-link { display: none; color: #0077FF; font-weight: 600; text-decoration: none; }
+      #footer-vk-link:hover { text-decoration: underline; }
+      .hero__content { padding-top: 80px; }
+    </style>
+  </head>
+  <body>
+    <div class="page-bg-accent" aria-hidden="true"></div>
+    <header class="hero" id="home">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="hero__kicker">Китайское кафе в Санкт-Петербурге</p>
+        <h1 class="hero__title">
+          <span id="hero-title-ru">Shijia</span>
+          <span class="hero__title-zh" id="hero-title-zh">十家</span>
+        </h1>
+        <p class="hero__subtitle" id="hero-subtitle">Настоящая китайская кухня в сердце Петербурга</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#menu">Смотреть меню</a>
+          <a class="btn btn--ghost" href="#contacts">Как добраться</a>
+        </div>
+        <img id="hero-photo" class="hero__photo" src="" alt="Интерьер кафе Shijia" />
+      </div>
+    </header>
+    <main>
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__heading"><h2>О нас</h2><p id="about-description"></p></div>
+          <div class="stats-grid" id="about-stats"></div>
+        </div>
+      </section>
+      <section class="section section--muted" id="menu">
+        <div class="container">
+          <div class="section__heading"><h2>Меню</h2><p>Выберите категорию и найдите любимые блюда.</p></div>
+          <div class="menu-tabs" id="menu-tabs" role="tablist" aria-label="Категории меню"></div>
+          <div class="menu-grid" id="menu-items"></div>
+        </div>
+      </section>
+      <section class="section" id="advantages">
+        <div class="container">
+          <div class="section__heading"><h2>Почему выбирают Shijia</h2></div>
+          <div class="advantages-grid" id="advantages-list"></div>
+        </div>
+      </section>
+      <section class="section section--muted" id="reviews">
+        <div class="container">
+          <div class="section__heading"><h2>Отзывы гостей</h2><p>Несколько мнений наших посетителей.</p></div>
+          <div class="reviews-grid" id="reviews-list"></div>
+        </div>
+      </section>
+      <section class="section" id="contacts">
+        <div class="container contacts-layout">
+          <div class="contacts-info">
+            <h2>Контакты и как добраться</h2>
+            <ul class="contacts-list">
+              <li><strong>Адрес:</strong> <span id="contact-address"></span></li>
+              <li><strong>Метро:</strong> <span id="contact-metro"></span></li>
+              <li><strong>Время работы:</strong> <span id="contact-worktime"></span></li>
+            </ul>
+            <div class="contact-actions">
+              <a class="btn btn--primary" id="takeaway-link" href="#">Заказать навынос</a>
+              <a class="btn btn--ghost" id="route-link" href="#" target="_blank" rel="noopener">Построить маршрут</a>
+            </div>
+          </div>
+          <div class="contacts-map">
+            <iframe id="map-iframe" title="Карта проезда к кафе Shijia" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p id="footer-name">Shijia / 十家</p>
+        <p id="footer-copy"></p>
+        <a id="footer-map-link" href="#" target="_blank" rel="noopener">Яндекс Карты</a>
+        <a id="footer-vk-link" href="#" target="_blank" rel="noopener">ВКонтакте</a>
+      </div>
+    </footer>
+    <script src="content.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
