@@ -92,8 +92,7 @@ const CONTENT = {
     social: [
       { name: "ВКонтакте", icon: "vk", url: "https://vk.com/shijia" },
     ],
-    mapIframe: "https://yandex.ru/map-widget/v1/?um=constructor%3A8cbb0d4a2a2f6f953f76e70d5a7d1aa9e7173322e1dbaee2fd710f0f3bf53f54&source=constructor",
-    yandexMapsUrl: "https://yandex.ru/maps/org/shijia/63429998152/",
+mapIframe: "https://yandex.ru/map-widget/v1/?ll=30.345914%2C59.927664&z=17&pt=30.345914%2C59.927664,pm2rdm",
   },
   footer: {
     name: "Shijia / 十家",
